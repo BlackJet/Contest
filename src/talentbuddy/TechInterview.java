@@ -1,6 +1,6 @@
 package talentbuddy;
 
-import java.util.Stack;
+import java.util.*;
 
 /**
  * User: Tony
@@ -87,6 +87,33 @@ public class TechInterview {
         }
 
         System.out.println("Balanced");
+    }
+
+    public static void sort_names(String[] names) {
+
+        Map<String, List<String>> map = new TreeMap<>();
+        for (String name : names) {
+            String lastName = name.split("\\s")[1];
+            if(!map.containsKey(lastName)) {
+                map.put(lastName, new ArrayList<String>());
+            }
+            map.get(lastName).add(name);
+        }
+
+        for (String lastName : map.keySet()) {
+            for (String name : map.get(lastName)) {
+                System.out.println(name);
+            }
+        }
+    }
+
+    public static void nth_number(Integer[] v, Integer n) {
+
+        int min1 = 0, min2 = 0, min3 = 0;
+
+        for (Integer value : v) {
+
+        }
     }
 
 }
