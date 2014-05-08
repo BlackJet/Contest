@@ -116,4 +116,21 @@ public class TechInterview {
         }
     }
 
+    public static void count_occurences(Integer[] v, Integer k) {
+        boolean started = false;
+        int counter = 0;
+        for (int value : v) {
+            if(value == k) {
+                counter++;
+                started = true;
+            } else if(started) {
+                System.out.println(counter);
+                return;
+            }
+        }
+
+        System.out.println(counter);
+
+    }
+
 }
