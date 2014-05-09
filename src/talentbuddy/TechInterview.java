@@ -133,4 +133,10 @@ public class TechInterview {
 
     }
 
+    public static void solve_equation(Double a, Double b) {
+        Double d = -b/a;
+        if(d.isInfinite() || d.isNaN()) System.out.println("INF");
+        else System.out.println(d);
+    }
+
 }
