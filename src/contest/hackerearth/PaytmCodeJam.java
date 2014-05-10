@@ -1,4 +1,4 @@
-package hackerearth;
+package contest.hackerearth;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

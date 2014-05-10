@@ -1,4 +1,4 @@
-package coderbyte;
+package contest.coderbyte;
 
 public class Easy {
     public static void compute_active_users(Integer n, Integer b) {

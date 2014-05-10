@@ -1,4 +1,4 @@
-package talentbuddy;
+package contest.talentbuddy;
 
 import java.util.Arrays;
 import java.util.List;
