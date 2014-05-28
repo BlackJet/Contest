@@ -8,7 +8,7 @@ public class SearchEngine {
 
     public static void main(String[] args) {
 
-        tokenize_query("car? dealers! bmw, audi", "?!");
+        token_stemming(new String[]{"friendly", "outgoing", "powerful", "in"}, new String[]{"ing", "ly", "ul", "ful"});
 
     }
 
@@ -44,6 +44,23 @@ public class SearchEngine {
         }
 
         System.out.println(token);
+
+    }
+
+    public static void token_stemming(String[] tokens, String[] suffixes) {
+
+        for (String token : tokens) {
+            int suffixLen = 0;
+            for (String suffix : suffixes) {
+                if (token.endsWith(suffix)) {
+                    suffixLen = suffix.length();
+                }
+            }
+            int tokenLen = token.length();
+
+            System.out.println(token.substring(0,tokenLen - suffixLen));
+
+        }
 
     }
 
