@@ -14,6 +14,7 @@ public class Checker {
         checker.check(new SelectSorter());
         checker.check(new QuickSorter());
         checker.check(new MergeSorter());
+        checker.check(new HeapSorter());
 
     }
 
