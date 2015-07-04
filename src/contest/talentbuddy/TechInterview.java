@@ -6,6 +6,7 @@ import java.util.*;
  * User: Tony
  * Date: 06.05.14
  * Time: 21:31
+ *
  */
 public class TechInterview {
 
